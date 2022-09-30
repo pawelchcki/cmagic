@@ -1,0 +1,13 @@
+[package]
+edition = "2021"
+name = "somebin"
+version = "0.1.0"
+
+[dev-dependencies]
+cc = "1.0"
+
+[build-dependencies]
+cc = "1.0"
+somelib = {path = "../somelib", artifact = ["cdylib", "bin"]}
+
+[workspace]
